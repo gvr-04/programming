@@ -1,0 +1,68 @@
+# day-17
+PascalCase  camelCase   snake_case CapWords-->convention for class names
+__init__ is called as constructor, it is used to set variables, counters, switches to their starting values at the beginning of a program. [Initialize Variables]
+attributes are variables that an object of a class contains, methods are functions that an object of a class can perform.
+quiz_brain: you can change the data.py file by changing the questions and answer format without disturbing the other files, you just need to change the key values inside the main program. This program is far more flexible in regard to changing the data as long it is in a list of dictionaries format.
+
+# day-18
+use import <module name> to import a module that is being used only once or twice, use from <module name> import <> to use it multiple times
+turtle module contains Turtle class and Screen class
+read through the turtle documentation-->it gives u superpowers.
+to use rgb values to set turtle colour u need to use turtle.colormode(255). to use strings as colours u need to use turtle.colormode(1).
+
+# day-19
+screen.listen() will start to listen to keystrokes screen.onkey() will bind a function to specific key.
+when using a function as an argument you need to remove the parenthesis.
+answer = screen.textinput(title="", prompt="")
+
+# day-20
+range(10,0,-1) to obtain reverse list.
+range does not take keyword arguments.
+
+# day-21
+inheritance: [class Abc(SuperClass):] is the class declaration where class Abc inherits from the class SuperClass.
+to inherit the attributes of SuperClass: inside the init function we need to write [super().__init__()].
+to make changes to methods in the inherited class methods, u can use [super().method()] then under this u can add some additional functionality.
+less sleep time more frames
+less moving distance more smoothness in motion
+*** bug when snake turns at the border ***. --> solved it 😙
+
+# day-22
+bug when paddle cuts through the ball.  ---> make sure to be sane to solve it...
+
+# day-24
+remember to close an opened file. using keyword with you don't need to close it explicitly
+"r" read --> it is default mode for opening a file.
+"w" write --> creates a new file if file is non-existent.
+"a" append
+absolute file path starts from root folder
+relative file path ./directory/file.extension --> . is the current working directory ; ../file.extension --> file inside parent file
+file.readlines() creates a list of each line as an object.
+string.strip() strips the spaces and newline characters at the end and beginning of a string
+
+# day-25
+csv module to work with csv files [csv - comma separated values]
+csv.reader(file) --> return iterable object that contains list of each line separated with respect to comma.
+note that the iterable object is not a list.
+pandas.read_csv("filename") --> returns a pandas dataframe object it is similar to an array
+pandas dataframe object contains series object that is similar to a list --> single column or row in array
+match argument: case value: case _:  -->switch cases in python.
+dictionary.pop(key) remove the item from dictionary
+
+# day-26
+list comprehension --> new_list = [<new_item> for <item> in <list> if <test>]
+dictionary comprehension --> new_dictionary ={<key>:<value> for <item> in <iterable>}
+dictionary comprehension using another dictionary --> new_dictionary = {new_key:new_value for (key, value) in old_dictionary.items()}
+if <test> can be used in dictionary also.
+dataframe.iterrows() returns (index, row) as an object.
+
+# day-27
+def fn(*args): takes unlimited arguments n stores as a tuple named args.
+def fn(**kwargs): takes unlimited keyword arguments and stores them as a dictionary named kwargs.
+
+# day-30
+dict1.update(dict2) --> dict1 will become a dict with both dict values [ it can also change the values in the original dict]
+try: --> tries to run the block of code
+except error: --> runs this block if error is encountered
+else : --> runs if try is executed successfully
+finally : --> runs no matter what happens.
